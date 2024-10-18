@@ -1,0 +1,194 @@
+.font {
+  font-family: "Poppins", sans-serif;
+}
+.nav-bg-color {
+  background-color: #181642;
+}
+.nav-box-shadow {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 1px 10px;
+}
+
+.homepage-color {
+  background-color: #181642;
+  height: 100vh;
+}
+.main-container {
+  height: 90vh;
+  width: 90vw;
+}
+.left-box {
+  height: 50%;
+  width: 50%;
+}
+.right-box {
+  height: 600px;
+  width: 500px;
+}
+.right-box img {
+  height: 100%;
+  width: 100%;
+}
+.bg-color-pink {
+  height: auto;
+  width: auto;
+  font-size: 1.5rem;
+  background-color: #ff2c90 !important;
+  border: #ff2c90;
+  margin: 10px;
+}
+.text-color {
+  color: #ff2c90;
+}
+.second-color {
+  background-color: rgb(5, 7, 41);
+  height: 100%;
+}
+.second-main-container {
+  min-height: 100vh;
+  height: 100% !important;
+  width: 75vw;
+  background-color: rgb(5, 7, 41);
+}
+.top-box {
+  height: 50%;
+  width: 100%;
+}
+.bottom-box {
+  height: 50%;
+  width: 100%;
+}
+.card {
+  height: 350px;
+  background-color: rgb(5, 7, 41);
+  color: white;
+}
+
+.card-container {
+  width: 300px;
+  height: 450px;
+}
+.list-group-item {
+  color: rgb(24, 175, 221);
+  border: 1px solid rgb(24, 175, 221) !important;
+  margin: 2px;
+  font-size: 0.8rem;
+}
+
+.list-group-item:hover {
+  cursor: pointer;
+  background-color: #68cdef;
+  color: #000c30;
+  opacity: 0.8;
+}
+
+.dark-blue {
+  background-color: rgb(5, 7, 41);
+}
+
+.skill-list {
+  color: rgb(24, 175, 221);
+  border: 1px solid rgb(24, 175, 221) !important;
+  margin: 2px;
+  font-size: 0.8rem;
+}
+
+.skill-list:hover {
+  cursor: pointer;
+  background-color: #68cdef;
+  color: #000c30;
+  opacity: 0.8;
+}
+
+.company {
+  color: rgb(248, 195, 4);
+}
+.card-title {
+  background-color: rgb(0, 65, 118);
+}
+.card-title-class {
+  border: 1px solid #479162;
+}
+.card-title-logo {
+  color: #479162;
+}
+.form-box {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-top: 5px solid #181642;
+  border-left: 3px solid #181642;
+  border-radius: 10px;
+}
+.btn-color-pink {
+  background-color: #ff2c90;
+  color: azure;
+}
+
+.btn-color-pink:hover {
+  background-color: #cf3378;
+  color: azure;
+}
+
+.poster {
+  margin: 0px;
+  padding: 0px;
+  height: 130px;
+  width: 100%;
+}
+
+.poster img {
+  height: 100%;
+  width: 100%;
+}
+
+.font-weight-normal {
+  font-weight: normal !important;
+}
+
+.font-weight-lighter {
+  font-weight: lighter;
+}
+
+.green {
+  color: #499062;
+}
+
+.red {
+  color: rgba(222, 0, 0, 0.856);
+}
+
+.sky-blue {
+  color: rgb(57, 199, 255);
+}
+.oops-color {
+  min-height: 100vh;
+  height: 100% !important;
+  width: 100vw;
+  background-color: rgb(5, 7, 41);
+  color: white;
+}
+.bg-color-yellow {
+  background-color: rgb(255, 208, 39);
+}
+
+.error-box {
+  min-height: 96vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.bg-theme {
+  background-color: #0e0d23;
+  color: white;
+}
+.top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.text-decoration-none {
+  text-decoration: none;
+}
+.animate__bounceOut{
+  animation-iteration-count: infinite;
+}

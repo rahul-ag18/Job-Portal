@@ -1,0 +1,124 @@
+<section>
+  <div class="container mx-auto my-5 form-box w-50 pb-4">
+    <h2 class="font-weight-lighter text-center mt-3 mb-3">Post a New Job</h2>
+    <form action="/postJob" method="post">
+      <div>
+        <select
+          name="type"
+          class="font-weight-lighter form-select mb-3"
+          aria-label="Default select example"
+        >
+          <option selected>Select job category</option>
+          <option value="Tech">Tech</option>
+          <option value="Non-Tech">Non-tech</option>
+        </select>
+
+        <select
+          name="role"
+          class="font-weight-lighter form-select"
+          aria-label="Default select example"
+        >
+          <option selected>Select job designation</option>
+          <option value="HR">HR</option>
+          <option value="SDE">SDE</option>
+          <option value="DevOps">DevOps</option>
+          <option value="MERN Developer">MERN Developer</option>
+          <option value="JAVA Developer">JAVA Developer</option>
+          <option value="Front-End Developer">Front-End Developer</option>
+          <option value="Back-End Developer">Back-End Developer</option>
+          <option value="Full-Stack Developer">Full-Stack Developer</option>
+          <option value="Angular Developer">Angular Developer</option>
+
+        </select>
+      </div>
+      <div class="mb-3 font-weight-lighter mt-3">
+        <label for="location" class="form-label">Enter job location</label>
+        <input
+          type="text"
+          name="location"
+          class="form-control font-weight-lighter"
+          aria-describedby="job-location"
+        />
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text font-weight-lighter" id="company-name"
+          >Company name</span
+        >
+        <input
+          type="text"
+          class="form-control font-weight-lighter"
+          aria-label="company-name"
+          aria-describedby="company-name"
+          name="company"
+          required
+        />
+      </div>
+      <div class="input-group mb-3 font-weight-lighter">
+        <input
+          type="text"
+          placeholder="Enter salary"
+          name="salary"
+          aria-label="salary"
+          class="form-control font-weight-lighter"
+        />
+        <span class="input-group-text font-weight-lighter"
+          >Total positions</span
+        >
+        <input
+          type="number"
+          name="positions"
+          aria-label="positions"
+          class="form-control font-weight-lighter"
+        />
+      </div>
+      <div class="input-group mb-4">
+        <select
+          required=""
+          multiple="true"
+          name="skill"
+          class="form-select"
+          aria-label="Default select example"
+        >
+          <option class="font-weight-lighter" selected="" disabled="">
+            select skills required
+          </option>
+          <option class="font-weight-lighter" value="React">React</option>
+          <option class="font-weight-lighter" value="NodeJS">NodeJS</option>
+          <option class="font-weight-lighter" value="Angular">Angular</option>
+          <option class="font-weight-lighter" value="MongoDB">MongoDB</option>
+          <option class="font-weight-lighter" value="SQL">SQL</option>
+          <option class="font-weight-lighter" value="Express">Express</option>
+          <option class="font-weight-lighter" value="Java">Java</option>
+          <option class="font-weight-lighter" value="SpringBoot">
+            SpringBoot
+          </option>
+          <option class="font-weight-lighter" value="JS">JS</option>
+          <option class="font-weight-lighter" value="AWS">AWS</option>
+
+          <option class="font-weight-lighter" value="C++">C++</option>
+          <option
+            class="font-weight-lighter"
+            value="Data Structures &amp; Algo"
+          >
+            Data Structures &amp; Algo
+          </option>
+        </select>
+
+        <span class="input-group-text font-weight-lighter">Apply By</span>
+        <input
+          name="date"
+          type="date"
+          class="form-control font-weight-lighter"
+          placeholder="total no of openings"
+          aria-label="Server"
+        />
+      </div>
+      <button
+        type="submit"
+        class="d-grid gap-2 mx-auto col-12 btn btn-success mb-2"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</section>

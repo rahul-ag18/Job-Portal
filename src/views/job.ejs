@@ -1,0 +1,48 @@
+<section class="second-color">
+  <div
+    id="second-main-container"
+    class="d-flex p-2 align-items-stretch mx-auto p-2 flex-wrap justify-content-around gap-3 second-main-container"
+  >
+    <% jobs.forEach((job) => { %>
+    <div class="col-sm-6 col-xl-4 card-container">
+      <div class="card border card-container">
+        <div class="card-body">
+          <div class="card-title card-title-class p-1 d-inline-block rounded">
+            Actively hiring &nbsp;<i
+              class="fa fa-line-chart card-title-logo"
+            ></i>
+          </div>
+          <h5 class="company mt-2"><%= job.company %></h5>
+          <h6><span><%= job.type %></span> <span><%= job.role %></span></h6>
+          <i class="fa-solid fa-location-dot"></i
+          ><span>&nbsp;<%= job.location %></span>
+          <p>&#8377; <%= job.salary %></p>
+
+          <% if (Array.isArray(job.skill)) { %>
+          <ul class="d-flex flex-wrap gap-0.5 list-group list-group-horizontal">
+            <% job.skill.forEach((skill) => { %>
+            <li class="list-group-item dark-blue skill-list rounded">
+              <%= skill %>
+            </li>
+            <% }) %>
+          </ul>
+          <% }else{ %>
+          <ul class="d-flex flex-wrap gap-0.5 list-group list-group-horizontal">
+            <li class="list-group-item dark-blue skill-list rounded">
+              <%= job.skill %>
+            </li>
+          </ul>
+          <% } %>
+
+          <a
+            class="btn btn-outline-success col-12 mx-auto mt-2"
+            href="/jobDetails/<%= job.id %>"
+            role="button"
+            >View details</a
+          >
+        </div>
+      </div>
+    </div>
+    <% }) %>
+  </div>
+</section>

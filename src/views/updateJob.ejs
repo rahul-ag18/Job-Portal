@@ -1,0 +1,228 @@
+<section>
+  <div class="container mx-auto my-5 form-box w-50 pb-4">
+    <h2 class="font-weight-lighter text-center mt-3 mb-3">Update Job</h2>
+    <form action="/updateJob/<%= job.id %>" method="post">
+      <div>
+        <select
+          name="type"
+          class="font-weight-lighter form-select mb-3"
+          aria-label="Default select example"
+        >
+          <option selected>Select new job category</option>
+          <% if (job.type == "Tech") { %>
+          <option value="Tech" selected>Tech</option>
+          <% } else { %>
+          <option value="Tech">Tech</option>
+          <% } %> <% if (job.type === "Non-Tech") { %>
+          <option value="Non-Tech" selected>Non-tech</option>
+          <% } else { %>
+          <option value="Non-Tech">Non-tech</option>
+          <% } %>
+        </select>
+
+        <select
+          name="role"
+          class="font-weight-lighter form-select"
+          aria-label="Default select example"
+        >
+          <option selected>Select new job designation</option>
+          <% if(job.role == "HR") { %>
+          <option value="HR" selected>HR</option>
+          <% } else { %>
+          <option value="HR">HR</option>
+          <% } %> <% if(job.role == "SDE") { %>
+          <option value="SDE" selected>SDE</option>
+          <% } else { %>
+          <option value="SDE">SDE</option>
+          <% } %> <% if(job.role == "DevOps") { %>
+          <option value="DevOps" selected>DevOps</option>
+          <% } else { %>
+          <option value="DevOps">DevOps</option>
+          <% } %> <% if(job.role == "MERN Developer") { %>
+          <option value="MERN Developer" selected>MERN Developer</option>
+          <% } else { %>
+          <option value="MERN Developer">MERN Developer</option>
+          <% } %> <% if(job.role == "JAVA Developer") { %>
+          <option value="JAVA Developer" selected>JAVA Developer</option>
+          <% } else { %>
+          <option value="JAVA Developer">JAVA Developer</option>
+          <% } %> <% if(job.role == "Front-End Developer") { %>
+          <option value="Front-End Developer" selected>
+            Front-End Developer
+          </option>
+          <% } else { %>
+          <option value="Front-End Developer">Front-End Developer</option>
+          <% } %> <% if(job.role == "Back-End Developer") { %>
+          <option value="Back-End Developer" selected>
+            Back-End Developer
+          </option>
+          <% } else { %>
+          <option value="Back-End Developer">Back-End Developer</option>
+          <% } %> <% if(job.role == "Full-Stack Developer") { %>
+          <option value="Full-Stack Developer" selected>
+            Full-Stack Developer
+          </option>
+          <% } else { %>
+          <option value="Full-Stack Developer">Full-Stack Developer</option>
+          <% } %> <% if(job.role == "Angular Developer") { %>
+          <option value="Angular Developer" selected>Angular Developer</option>
+          <% } else { %>
+          <option value="Angular Developer">Angular Developer</option>
+          <% } %>
+        </select>
+      </div>
+      <div class="mb-3 font-weight-lighter mt-3">
+        <label for="location" class="form-label">Enter job location</label>
+        <input
+          type="text"
+          name="location"
+          class="form-control font-weight-lighter"
+          aria-describedby="job-location"
+          value="<%= job.location %>"
+        />
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text font-weight-lighter" id="company-name"
+          >Company name</span
+        >
+        <input
+          type="text"
+          class="form-control font-weight-lighter"
+          aria-label="company-name"
+          aria-describedby="company-name"
+          name="company"
+          ,
+          value="<%= job.company %>"
+          ,
+          required
+        />
+      </div>
+      <div class="input-group mb-3 font-weight-lighter">
+        <input
+          type="text"
+          placeholder="Enter salary"
+          name="salary"
+          aria-label="salary"
+          class="form-control font-weight-lighter"
+          value="<%= job.salary %>"
+        />
+        <span class="input-group-text font-weight-lighter"
+          >Total positions</span
+        >
+        <input
+          type="number"
+          name="positions"
+          aria-label="positions"
+          class="form-control font-weight-lighter"
+          value="<%= job.positions %>"
+        />
+      </div>
+      <div class="input-group mb-4">
+        <select
+          required=""
+          multiple="true"
+          name="skill"
+          class="form-select"
+          aria-label="Default select example"
+        >
+          <option class="font-weight-lighter" selected="" disabled="">
+            select skills required
+          </option>
+
+          <% if(job.skill.includes("React")) { %>
+          <option class="font-weight-lighter" value="React" selected>
+            React
+          </option>
+          <% }else{ %>
+          <option class="font-weight-lighter" value="React">React</option>
+          <% } %> <% if(job.skill.includes("NodeJS")) { %>
+          <option class="font-weight-lighter" value="NodeJS" selected>
+            NodeJS
+          </option>
+          <% }else{ %>
+          <option class="font-weight-lighter" value="NodeJs">NodeJs</option>
+          <% } %> <% if(job.skill.includes("Angular")) { %>
+          <option class="font-weight-lighter" value="Angular" selected>
+            Angular
+          </option>
+          <% }else{ %>
+          <option class="font-weight-lighter" value="Angular">Angular</option>
+          <% } %> <% if(job.skill.includes("MongoDB")) { %>
+          <option class="font-weight-lighter" value="MongoDB" selected>
+            MongoDB
+          </option>
+          <% }else{ %>
+          <option class="font-weight-lighter" value="MongoDB">MongoDB</option>
+          <% } %> <% if(job.skill.includes("SQL")) { %>
+          <option class="font-weight-lighter" value="SQL" selected>SQL</option>
+          <% }else{ %>
+          <option class="font-weight-lighter" value="SQL">SQL</option>
+          <% } %> <% if(job.skill.includes("Express")) { %>
+          <option class="font-weight-lighter" value="Express" selected>
+            Express
+          </option>
+          <% }else{ %>
+          <option class="font-weight-lighter" value="Express">Express</option>
+          <% } %> <% if(job.skill.includes("Java")) { %>
+          <option class="font-weight-lighter" value="Java" selected>
+            Java
+          </option>
+          <% }else{ %>
+          <option class="font-weight-lighter" value="Java">Java</option>
+          <% } %> <% if(job.skill.includes("SpringBoot")) { %>
+          <option class="font-weight-lighter" value="SpringBoot" selected>
+            SpringBoot
+          </option>
+          <% }else{ %>
+          <option class="font-weight-lighter" value="SpringBoot">
+            SpringBoot
+          </option>
+          <% } %> <% if(job.skill.includes("C++")) { %>
+          <option class="font-weight-lighter" value="C++" selected>C++</option>
+          <% }else{ %>
+          <option class="font-weight-lighter" value="C++">C++</option>
+          <% } %> <% if(job.skill.includes("Data Structures & Algo")) { %>
+          <option
+            class="font-weight-lighter"
+            value="Data Structures &amp; Algo"
+            selected
+          >
+            Data Structures &amp; Algo
+          </option>
+          <% }else{ %>
+          <option
+            class="font-weight-lighter"
+            value="Data Structures &amp; Algo"
+          >
+            Data Structures &amp; Algo
+          </option>
+          <% } %> <% if(job.skill.includes("JS")) { %>
+          <option class="font-weight-lighter" value="JS" selected>JS</option>
+          <% }else{ %>
+          <option class="font-weight-lighter" value="JS">JS</option>
+          <% } %> <% if(job.skill.includes("AWS")) { %>
+          <option class="font-weight-lighter" value="AWS" selected>AWS</option>
+          <% }else{ %>
+          <option class="font-weight-lighter" value="AWS">AWS</option>
+          <% } %>
+        </select>
+
+        <span class="input-group-text font-weight-lighter">Apply By</span>
+        <input
+          name="date"
+          type="date"
+          class="form-control font-weight-lighter"
+          placeholder="total no of openings"
+          aria-label="Server"
+          value="<%= job.date %>"
+        />
+      </div>
+      <button
+        type="submit"
+        class="d-grid gap-2 mx-auto col-12 btn btn-success mb-2"
+      >
+        Update
+      </button>
+    </form>
+  </div>
+</section>

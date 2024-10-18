@@ -1,0 +1,127 @@
+<section class="homepage-color">
+  <div
+    id="main-container"
+    class="d-flex p-2 align-items-center mx-auto p-2 main-container"
+  >
+    <div id="left-box" class="left-box text-white flex-grow-1">
+      <h1 class="text-color">A comprehensive platform for reliable</h1>
+      <span class="animate__bounceOut">
+        <h2>Job opportunities and internships</h2>
+        <h3>Get Discovered. Get Hired.</h3>
+      </span>
+
+      <div class="d-flex p-2 justify-content-start flex-wrap">
+        <a
+          href="/job"
+          class="btn btn-primary bg-color-pink"
+          role="button"
+          aria-disabled="true"
+          >I'm a Job Seeker</a
+        >
+        <a
+          href="#"
+          class="btn btn-primary bg-color-pink"
+          role="button"
+          aria-disabled="true"
+          data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop"
+          >I'm a Recruiter</a
+        >
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="staticBackdrop"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5 text-body" id="staticBackdropLabel">
+                  Experience easily!
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form action="/register" method="post">
+                  <div class="input-group mb-3">
+                    <span
+                      class="input-group-text font-weight-lighter mt-2"
+                      id="name"
+                      >Name</span
+                    >
+                    <input
+                      type="text"
+                      class="form-control font-weight-lighter mt-2"
+                      placeholder="Enter your name"
+                      aria-label="name"
+                      aria-describedby="name"
+                      name="name"
+                      required
+                    />
+                  </div>
+                  <div class="input-group mb-3">
+                    <span
+                      class="input-group-text font-weight-lighter"
+                      id="email"
+                      >Email</span
+                    >
+                    <input
+                      type="email"
+                      class="form-control font-weight-lighter"
+                      placeholder="Enter your email"
+                      aria-label="email"
+                      aria-describedby="email"
+                      name="email"
+                      required
+                    />
+                  </div>
+                  <div class="input-group mb-3">
+                    <span
+                      class="input-group-text font-weight-lighter"
+                      id="password"
+                      >Password</span
+                    >
+                    <input
+                      type="password"
+                      class="form-control font-weight-lighter"
+                      placeholder="Enter your password"
+                      aria-label="password"
+                      aria-describedby="password"
+                      name="password"
+                      required
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-color-pink mt-2 mb-2">
+                    Register
+                  </button>
+                </form>
+              </div>
+              <div class="modal-footer d-flex flex-wrap justify-content-start">
+                <span style="color: black">Already registered?</span>
+                <a
+                  class="btn btn-outline-success mt-2"
+                  href="/login"
+                  role="button"
+                  >Login</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="right-box" class="right-box">
+      <img src="images/banner.png" />
+    </div>
+  </div>
+</section>
